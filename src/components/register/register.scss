@@ -1,0 +1,86 @@
+.main-container {
+    display: flex;
+    width: 100vw;
+}
+
+.bg-logo {
+    height: 100vh;
+}
+
+.h1-welcome {
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    width: 100%;
+    align-items: center;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.div-number {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+// #prefix-input{
+//     width:50%;
+// }
+
+// #phone-input{
+//     width:50%;
+// }
+
+#input-divide-prefix {
+    width: 90%;
+}
+
+#input-divide-number {
+    width: 90%;
+}
+
+.inner-div-p {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+}
+
+.inner-div-n {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    margin-right: 0;
+}
+
+.btn-register {
+    margin-top: 0.5rem;
+}
+
+.intro-p {
+    width: 20rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.invisible{
+    display: none;
+}
+
+.style-p{
+    font-size: 12px;
+    color: #d15656;
+}
+
+.red{
+    border: 1.5px solid #d15656;
+}
