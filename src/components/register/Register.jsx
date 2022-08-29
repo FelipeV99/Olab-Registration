@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import bgLogo from '../../assets/BgWithText.svg'
 import './register.css'
+import emailjs from 'emailjs-com'
 import InfoModal from '../InformationModal/InfoModal'
 
 const Register = () => {
@@ -19,8 +20,7 @@ const Register = () => {
         }else{
             console.log(formRef.current)
             setIsOpen(true)
-            console.log(emailRef.current.value)
-            console.log(numberRef.current.value)
+            emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
             pRef.current.classList.add('invisible')
             numberRef.current.classList.remove('red')
             emailRef.current.classList.remove('red')
@@ -38,12 +38,8 @@ const Register = () => {
     numberRef.current.classList.add('red')
     emailRef.current.classList.add('red')
     dialRef.current.classList.add('red')
-
-    
 }
-
     const [isOpen, setIsOpen] = useState(false)
-    console.log(svgRef.current)
     return (
         <div className='main-container'>
             <img src={bgLogo} className="bg-logo" alt="logo" ref={svgRef} />
