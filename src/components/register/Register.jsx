@@ -44,7 +44,7 @@ const Register = () => {
             <div className='register-container'>
                 <img src={olabLogo} alt="Olab-logo" className='olab-logo' />
                 <h2>Register</h2>
-                <p className='normal-p intro-p'>  fill out the following fields in order to start using O-lab.</p>
+                <p className='normal-p intro-p'>Please fill out the following fields in order to start using O-lab.</p>
                 <form ref={formRef} onSubmit={sendEmail} className='form-register'>
                     <label htmlFor="fullname">Full Name *</label>
                     <input name="fullname" type="text" required />
