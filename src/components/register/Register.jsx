@@ -22,6 +22,7 @@ const Register = () => {
             console.log(formRef.current)
             setIsOpen(true)
             emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
+            emailjs.sendForm('service_mgjhrok', 'template_7qstj6l', formRef.current, '2VsWYyoUUzfNvfPC8')
             numberRef.current.classList.remove('red')
             emailRef.current.classList.remove('red')
             dialRef.current.classList.remove('red')
@@ -52,19 +53,19 @@ const Register = () => {
                     <p className="normal-p" ref={pRef}> Please fill either the email or phone number</p>
                     <div className='div-number'>
                         <div className='inner-div-p'>
-                            <label htmlFor="dial-code">Dial Code</label>
+                            <label htmlFor="dial-code">Dial Code *</label>
                             <input id='input-divide-prefix' name="dial-code" type="number" ref={dialRef} />
                         </div>
                         <div className='inner-div-n'>
-                            <label htmlFor="number">Telephone Number</label>
+                            <label htmlFor="number">Telephone Number *</label>
                             <input id='input-divide-number' name="number" type="number" ref={numberRef}  />
                         </div>
                     </div>
 
                     <label htmlFor="email">Email *</label>
                     <input name="email" type="email" ref={emailRef}  />
-                    <label htmlFor="age">Age *</label>
-                    <input name="age" type="number" required />
+                    <label htmlFor="age">Date of Birth *</label>
+                    <input name="age" type="date" required />
                     <label htmlFor="nationality">Nationality *</label>
                     <input name="nationality" type="text" required />
                     <label htmlFor="organization">Organization *</label>
