@@ -12,6 +12,9 @@ const Register = () => {
     const dialRef = useRef()
     const numberRef = useRef()
     const pRef = useRef()
+    const selectRef = useRef()
+
+    const [selectedState,setSelectedState] = useState("")
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,9 +22,8 @@ const Register = () => {
             emailNumberError()
             
         }else{
-            console.log(formRef.current)
             setIsOpen(true)
-            // emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
+            emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
             emailjs.sendForm('service_mgjhrok', 'template_7qstj6l', formRef.current, '2VsWYyoUUzfNvfPC8')
             numberRef.current.classList.remove('red')
             emailRef.current.classList.remove('red')
@@ -67,10 +69,13 @@ const Register = () => {
                     <label htmlFor="nationality">Nationality *</label>
                     <input name="nationality" type="text" required />
                     <label htmlFor="organization">Organization *</label>
-                    <select id="organization" required>
+                    <select id="organization" required ref={selectRef} onChange={(e)=>{setSelectedState(e.target.value)}}>
                         <option value="">Please select an option...</option>
-                        <option value="Wadi">Wadi Ben-Hirki Foundation</option>
+                        <option value="Student">Student</option>
+                        <option value="Worker">Worker</option>
+                        <option value="Others">Others</option>
                     </select>
+                    <input className='hidden-input' type="text" name="hiddenOrg" value={selectedState} />
                     <button type="submit" className="btn btn-primary btn-register">Submit</button>
                 </form>
             </div>

@@ -87,6 +87,10 @@
   margin-bottom: 2rem;
 }
 
+.hidden-input {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .bg-logo {
     display: none;
