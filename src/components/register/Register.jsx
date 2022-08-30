@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import bgLogo from '../../assets/BgWithText.svg'
+import olabLogo from '../../assets/OlabRounded.svg'
 import './register.css'
 import emailjs from 'emailjs-com'
 import InfoModal from '../InformationModal/InfoModal'
@@ -21,7 +22,6 @@ const Register = () => {
             console.log(formRef.current)
             setIsOpen(true)
             emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
-            pRef.current.classList.add('invisible')
             numberRef.current.classList.remove('red')
             emailRef.current.classList.remove('red')
             dialRef.current.classList.remove('red')
@@ -34,7 +34,6 @@ const Register = () => {
 
     
   const emailNumberError = () => {
-    pRef.current.classList.remove('invisible')
     numberRef.current.classList.add('red')
     emailRef.current.classList.add('red')
     dialRef.current.classList.add('red')
@@ -44,12 +43,13 @@ const Register = () => {
         <div className='main-container'>
             <img src={bgLogo} className="bg-logo" alt="logo" ref={svgRef} />
             <div className='register-container'>
+                <img src={olabLogo} alt="Olab-logo" className='olab-logo' />
                 <h2>Register</h2>
-                <p className='intro-p'>Please fill out the following fields in order to start using O-lab</p>
+                <p className='normal-p intro-p'>Please fill out the following fields in order to start using O-lab</p>
                 <form ref={formRef} onSubmit={sendEmail} className='form-register'>
                     <label htmlFor="fullname">Full Name *</label>
                     <input name="fullname" type="text" required />
-                    <p className="invisible style-p" ref={pRef}> Please fill either the email or phone number</p>
+                    <p className="normal-p" ref={pRef}> Please fill either the email or phone number</p>
                     <div className='div-number'>
                         <div className='inner-div-p'>
                             <label htmlFor="dial-code">Dial Code</label>
@@ -70,9 +70,7 @@ const Register = () => {
                     <label htmlFor="organization">Organization *</label>
                     <select id="organization" required>
                         <option value="">Please select an option...</option>
-                        <option value="Wadi">Wadi</option>
-                        <option value="Ben-Hirki">Ben-Hirki</option>
-                        <option value="Foundation">Foundation</option>
+                        <option value="Wadi">Wadi Ben-Hirki Foundation</option>
                     </select>
                     <button type="submit" className="btn btn-primary btn-register">Submit</button>
                 </form>
