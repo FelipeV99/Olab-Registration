@@ -21,7 +21,7 @@ const Register = () => {
         }else{
             console.log(formRef.current)
             setIsOpen(true)
-            // emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
+            emailjs.sendForm('service_mgjhrok', 'template_2dubdeo', formRef.current, '2VsWYyoUUzfNvfPC8')
             emailjs.sendForm('service_mgjhrok', 'template_7qstj6l', formRef.current, '2VsWYyoUUzfNvfPC8')
             numberRef.current.classList.remove('red')
             emailRef.current.classList.remove('red')
