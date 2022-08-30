@@ -56,4 +56,13 @@ button {
 
 p {
   color: #787878;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 70vw;
+  }
+  .btn {
+    width: 70vw;
+  }
 }/*# sourceMappingURL=index.css.map */
