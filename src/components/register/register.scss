@@ -81,7 +81,10 @@
 
 .normal-p{
     font-size: 12px;
-    color: #787878;;
+    color: #787878;
+    width:fit-content;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .red{
@@ -104,6 +107,10 @@
 
   .register-container {
     margin-top: 1rem;
+}
+
+.div-number{
+    width: 60vw;
 }
 
 }
