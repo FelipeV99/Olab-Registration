@@ -98,7 +98,13 @@
   .register-container {
     margin-top: 1rem;
   }
+  #initial-p {
+    width: 70vw;
+  }
+  .normal-p {
+    width: 70vw;
+  }
   .div-number {
-    width: 60vw;
+    width: 70vw;
   }
 }/*# sourceMappingURL=register.css.map */

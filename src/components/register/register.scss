@@ -2,7 +2,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    
+
 }
 
 .bg-logo {
@@ -33,9 +33,9 @@
     display: flex;
     width: 100%;
     // gap: 1rem;
-    justify-content:space-between;
+    justify-content: space-between;
     
-    
+
 }
 
 // #prefix-input{
@@ -77,46 +77,55 @@
     text-align: left;
 }
 
-.normal-p{
+.normal-p {
     font-size: 12px;
     color: #787878;
-    
+
     // width:fit-content;
 }
 
-#initial-p{
-    width:22rem;
+#initial-p {
+    width: 22rem;
 }
 
-.red{
+.red {
     border: 1.5px solid #d15656;
 }
 
-.olab-logo{
+.olab-logo {
     display: none;
     width: 4rem;
     margin-bottom: 2rem;
 }
 
-.hidden-input{
+.hidden-input {
     display: none;
 }
 
-@media (max-width:768px){
-  .bg-logo{
-    display: none;
-  }
-  .olab-logo{
-    display: flex;
-  }
+@media (max-width:768px) {
+    .bg-logo {
+        display: none;
+    }
 
-  .register-container {
-    margin-top: 1rem;
-}
+    .olab-logo {
+        display: flex;
+    }
+
+    .register-container {
+        margin-top: 1rem;
+    }
+
+    #initial-p{
+        width: 70vw;
+    }
+
+    .normal-p{
+        width: 70vw;
+    }
 
 
-.div-number{
-    width: 60vw;
-}
+    .div-number {
+        width: 70vw;
+    }
 
 }

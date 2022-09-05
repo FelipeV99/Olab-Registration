@@ -48,27 +48,27 @@ const Register = () => {
                 <h2>Register</h2>
                 <form ref={formRef} onSubmit={sendEmail} className='form-register'>
                     <p className='normal-p intro-p' id="initial-p">Please fill out the following fields in order to start using O-lab.</p>
-                    <label htmlFor="fullname">Full Name *</label>
+                    <label htmlFor="fullname">Full Name*</label>
                     <input name="fullname" type="text" required />
                     <p className="normal-p" ref={pRef}> Please fill either the email or phone number</p>
                     <div className='div-number'>
                         <div className='inner-div-p'>
-                            <label htmlFor="dial-code">Dial Code *</label>
+                            <label htmlFor="dial-code">Prefix*</label>
                             <input id='input-divide-prefix' name="dial-code" type="number" ref={dialRef} />
                         </div>
                         <div className='inner-div-n'>
-                            <label htmlFor="number">Telephone Number *</label>
+                            <label htmlFor="number">Telephone Number*</label>
                             <input id='input-divide-number' name="number" type="number" ref={numberRef}  />
                         </div>
                     </div>
 
-                    <label htmlFor="email">Email *</label>
+                    <label htmlFor="email">Email*</label>
                     <input name="email" type="email" ref={emailRef}  />
-                    <label htmlFor="age">Date of Birth *</label>
+                    <label htmlFor="age">Date of Birth*</label>
                     <input name="age" type="date" required />
-                    <label htmlFor="nationality">Nationality *</label>
+                    <label htmlFor="nationality">Nationality*</label>
                     <input name="nationality" type="text" required />
-                    <label htmlFor="organization">Organization *</label>
+                    <label htmlFor="organization">Organization*</label>
                     <select id="organization" required ref={selectRef} onChange={(e)=>{setSelectedState(e.target.value)}}>
                         <option value="">Please select an option...</option>
                         <option value="Student">Student</option>

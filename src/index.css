@@ -60,12 +60,12 @@ p {
 
 @media (max-width: 768px) {
   input {
-    width: 60vw;
+    width: 70vw;
   }
   select {
-    width: 60vw;
+    width: 70vw;
   }
   .btn {
-    width: 60vw;
+    width: 70vw;
   }
 }/*# sourceMappingURL=index.css.map */
