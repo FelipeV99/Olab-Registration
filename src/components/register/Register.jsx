@@ -68,8 +68,8 @@ const Register = () => {
                     <input name="age" type="date" required />
                     <label htmlFor="nationality">Nationality*</label>
                     <input name="nationality" type="text" required />
-                    <label htmlFor="organization">Organization*</label>
-                    <select id="organization" required ref={selectRef} onChange={(e)=>{setSelectedState(e.target.value)}}>
+                    <label htmlFor="categories">Categories*</label>
+                    <select id="categories" required ref={selectRef} onChange={(e)=>{setSelectedState(e.target.value)}}>
                         <option value="">Please select an option...</option>
                         <option value="Student">Student</option>
                         <option value="Worker">Worker</option>
