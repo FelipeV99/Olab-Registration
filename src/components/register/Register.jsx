@@ -71,6 +71,7 @@ const Register = () => {
                     <label htmlFor="categories">Categories*</label>
                     <select id="categories" required ref={selectRef} onChange={(e)=>{setSelectedState(e.target.value)}}>
                         <option value="">Please select an option...</option>
+                        <option value="Wadi Ben-Hirki Foundation">Wadi Ben-Hirki Foundation</option>
                         <option value="Student">Student</option>
                         <option value="Worker">Worker</option>
                         <option value="Others">Others</option>
