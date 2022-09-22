@@ -18,6 +18,7 @@ const Register = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        console.log(formRef.current)
         if(emailRef.current.value == 0 && numberRef.current.value == 0){
             emailNumberError()
             
